@@ -15,13 +15,13 @@ There is 2 inputs:
 - 1 (0.1 cent inserted)
 
 ## State Diagram
-<img src = "./images/fsm-diagram.jpeg">
+![fsm-diagram](https://user-images.githubusercontent.com/114371692/213273999-990d3e32-01a0-4b14-bc4e-cb22097635d4.jpeg)
 
 ## State and Transition Table
 <img src = "./images/IMG_0383.jpg">
 
 ## K-Map
-<img src = "./images/kmap.jpg">
+![kmap](https://user-images.githubusercontent.com/114371692/213274035-e4cf31aa-b3da-439c-bbcc-7d68a2d892b3.jpg)
 
 ## Visualization
 ### How to run
