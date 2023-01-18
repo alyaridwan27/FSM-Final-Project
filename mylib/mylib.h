@@ -1,8 +1,1 @@
-#ifndef MYLIB_H
-#define MYLIB_H
-
-int is_valid_input(int input);
-int next_state(int state, int input);
-int should_dispense(int state);
-
-#endif
+void states(int s0, int s1, int o0, int b, int *ns0, int *ns1, int *no0);

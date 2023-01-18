@@ -1,33 +1,78 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <stdbool.h>
 #include "mylib/mylib.h"
 
-int main()
-{
-  int state = 0; // Initial state is 00
-  int input;
+void VendingMachine() {
+    printf("     ____________\n");
+    printf("    |            |\n");
+    printf("    |            |\n");
+    printf("    |            |\n");
+    printf("    |            |\n");
+    printf("    |            |\n");
+    printf("    |            |\n");
+    printf("    |            |\n");
+    printf("    |            |\n");
+    printf("    |            |\n");
+    printf("    |____________|\n");
+    printf("      |______|\n");
+    printf("      |      |\n");
+    printf("      |      |\n");
+    printf("      |      |\n");
+    printf("      |      |\n");
+    printf("      |______|\n");
+    printf("        |__|\n");
+    printf("        |__|\n");
+}
 
-  printf("Welcome to the gumball vending machine!\n");
-  printf("To dispense a gumball, deposit 0.4 cents.\n");
+void DispenseGumball() {
+    printf("\033[1;1H"); // Move cursor to upper left
+    printf("                            _____\n");
+    printf("                           |     |\n");
+    printf("                           | [][] |\n");
+    printf("                           |_____|\n");
+    printf("                             (__)\n");
+    printf("                           //    \\\\ \n");
+    printf("                         //        \\\\ \n");
+    printf("                       //            \\\\ \n");
+    printf("                     //                \\\\ \n");
+    printf("                   //                    \\\\ \n");
+    printf("                 //                        \\\\ \n");
+    printf("               //                            \\\\ \n");
+    printf("             //                                \\\\ \n");
+    printf("           //                                    \\\\ \n");
+    printf("         //                                        \\\\ \n");
+    printf("\n\n");
+}
 
-  while (1) // Run indefinitely
-  {
-    printf("Current state: %d%d\n", state / 2, state % 2);
-    printf("Enter 1 to insert a coin or 0 to cancel: ");
-    scanf("%d", &input);
+void InsertCoin() {
+    printf("\033[1;1H"); // Move cursor to upper left
+    printf("                                            Insert Coin\n");
+}
 
-    if (is_valid_input(input))
-    {
-      state = next_state(state, input);
-      if (should_dispense(state))
-      {
-        printf("Gumball dispensed!\n");
-      }
+int main(void) {
+    int s0 = 0, s1 = 0, b, o0 = 0, coin_counter = 0;
+    while (true) {
+        printf("\033[2J"); // Clear screen 
+        printf("\033[1;1H"); // Move cursor to upper left
+        VendingMachine();
+        if (o0 == 0) {
+            InsertCoin();
+        }
+        if (coin_counter == 4) {
+            DispenseGumball();
+        }
+        printf("Enter coin input (0 for not inserting coin // 1 for inserting coin): ");
+        scanf("%d", &b);
+
+        if (b == 0 || b == 1) {
+            if (b == 1) {
+                coin_counter++;
+            }
+        } else {
+            printf("Please enter a proper input (0 or 1)\n");
+        }
     }
-    else
-    {
-      printf("Invalid input.\n");
-    }
-  }
 
-  return 0;
+    return 0;
 }
