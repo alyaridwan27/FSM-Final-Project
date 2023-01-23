@@ -6,48 +6,25 @@
 void VendingMachine() {
     printf("     ____________\n");
     printf("    |            |\n");
-    printf("    |            |\n");
-    printf("    |            |\n");
-    printf("    |            |\n");
-    printf("    |            |\n");
-    printf("    |            |\n");
-    printf("    |            |\n");
-    printf("    |            |\n");
-    printf("    |            |\n");
-    printf("    |____________|\n");
+    printf("    |oooooooooooo|\n");
+    printf("    |oooooooooooo|\n");
+    printf("    |oooooooooooo|\n");
     printf("      |______|\n");
-    printf("      |      |\n");
-    printf("      |      |\n");
-    printf("      |      |\n");
-    printf("      |      |\n");
-    printf("      |______|\n");
-    printf("        |__|\n");
     printf("        |__|\n");
 }
 
 void DispenseGumball() {
     printf("\033[1;1H"); // Move cursor to upper left
-    printf("                            _____\n");
-    printf("                           |     |\n");
-    printf("                           | [][] |\n");
-    printf("                           |_____|\n");
-    printf("                             (__)\n");
-    printf("                           //    \\\\ \n");
-    printf("                         //        \\\\ \n");
-    printf("                       //            \\\\ \n");
-    printf("                     //                \\\\ \n");
-    printf("                   //                    \\\\ \n");
-    printf("                 //                        \\\\ \n");
-    printf("               //                            \\\\ \n");
-    printf("             //                                \\\\ \n");
-    printf("           //                                    \\\\ \n");
-    printf("         //                                        \\\\ \n");
+    printf("        (__)\n");
+    printf("      //    \\\\ \n");
+    printf("         o \n");
+    printf(" Gumball Dispensed! \n");
     printf("\n\n");
 }
 
 void InsertCoin() {
-    printf("\033[1;1H"); // Move cursor to upper left
-    printf("                                            Insert Coin\n");
+    printf("\033[5;5H"); 
+    printf("Insert Coin\n");
 }
 
 int main(void) {
@@ -60,6 +37,7 @@ int main(void) {
             InsertCoin();
         }
         if (coin_counter == 4) {
+            VendingMachine();
             DispenseGumball();
         }
         printf("Enter coin input (0 for not inserting coin // 1 for inserting coin): ");
