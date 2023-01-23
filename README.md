@@ -18,10 +18,10 @@ There is 2 inputs:
 ![fsm-diagram](https://user-images.githubusercontent.com/114371692/213273999-990d3e32-01a0-4b14-bc4e-cb22097635d4.jpeg)
 
 ## State and Transition Table
-<img src = "./images/IMG_0383.jpg">
+![states](https://user-images.githubusercontent.com/114371692/214013552-ac21f521-cde2-4a72-8b5e-93daa1d6e7dd.jpg)
 
 ## K-Map
-![kmap](https://user-images.githubusercontent.com/114371692/213274035-e4cf31aa-b3da-439c-bbcc-7d68a2d892b3.jpg)
+![kmap](https://user-images.githubusercontent.com/114371692/214013578-8376ada8-10c5-46c8-93a5-13869beae0e7.jpg)
 
 ## Visualization
 ### How to run
