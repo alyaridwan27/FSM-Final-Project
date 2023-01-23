@@ -43,7 +43,7 @@ Insert Coin
          |__|
 Enter coin input (0 for not inserting coin // 1 for inserting coin):
 ```
-After you inout 4 coins:
+After you input 4 coins:
 ```
      ____________
     |            |
