@@ -30,3 +30,33 @@ In you terminal you should type
 make all
 ```
 
+### Output
+After you first run:
+```
+Insert Coin
+     ____________
+    |            |
+    |oooooooooooo|
+    |oooooooooooo|
+    |oooooooooooo|
+       |______|
+         |__|
+Enter coin input (0 for not inserting coin // 1 for inserting coin):
+```
+After you inout 4 coins:
+```
+     ____________
+    |            |
+    |oooooooooooo|
+    |oooooooooooo|
+    |oooooooooooo|
+       |______|
+         |__|
+         (__)
+       //    \\   
+           o
+ Gumball Dispensed!
+Enter coin input (0 for not inserting coin // 1 for inserting coin):
+```
+
+
