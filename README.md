@@ -21,7 +21,8 @@ There is 2 inputs:
 ![states](https://user-images.githubusercontent.com/114371692/214013552-ac21f521-cde2-4a72-8b5e-93daa1d6e7dd.jpg)
 
 ## K-Map
-![kmap](https://user-images.githubusercontent.com/114371692/214013578-8376ada8-10c5-46c8-93a5-13869beae0e7.jpg)
+![IMG_0414](https://user-images.githubusercontent.com/114371692/214280008-3aa729ef-1755-42ff-b327-ec99fb7fc835.jpg)
+
 
 ## Visualization
 ### How to run
