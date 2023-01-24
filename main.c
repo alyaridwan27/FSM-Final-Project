@@ -9,29 +9,31 @@ void VendingMachine() {
     printf("    |oooooooooooo|\n");
     printf("    |oooooooooooo|\n");
     printf("    |oooooooooooo|\n");
-    printf("      |______|\n");
-    printf("        |__|\n");
+    printf("       |______|\n");
+    printf("         |__|\n");
 }
 
 void DispenseGumball() {
-    printf("\033[1;1H"); // Move cursor to upper left
+    printf("\033[8;3H");
     printf("        (__)\n");
     printf("      //    \\\\ \n");
     printf("         o \n");
     printf(" Gumball Dispensed! \n");
-    printf("\n\n");
+    printf("\033[H");
 }
 
+
 void InsertCoin() {
-    printf("\033[5;5H"); 
+    printf("\033[2;5H");
     printf("Insert Coin\n");
+    printf("\033[H");
 }
 
 int main(void) {
     int s0 = 0, s1 = 0, b, o0 = 0, coin_counter = 0;
     while (true) {
         printf("\033[2J"); // Clear screen 
-        printf("\033[1;1H"); // Move cursor to upper left
+        printf("\033[H"); // Move cursor to upper left
         VendingMachine();
         if (o0 == 0) {
             InsertCoin();
@@ -40,6 +42,7 @@ int main(void) {
             VendingMachine();
             DispenseGumball();
         }
+        printf("\033[3A"); // Move cursor up 3 lines
         printf("Enter coin input (0 for not inserting coin // 1 for inserting coin): ");
         scanf("%d", &b);
 
